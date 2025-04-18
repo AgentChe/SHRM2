@@ -173,18 +173,6 @@ final class TestViewController: UIViewController {
             })
             .disposed(by: disposeBag)
         
-        currentButtonState
-            .filter { [.submit, .back].contains($0) }
-            .withLatestFrom(viewModel.needPayment)
-            .subscribe(onNext: { needPayment in
-                guard !needPayment else {
-                    return
-                }
-                
-                TestRateUs().showFirstAfterPassRateAlert()
-            })
-            .disposed(by: disposeBag)
-        
         mainView.closeButton.rx.tap
             .withLatestFrom(viewModel.userTestId)
             .withLatestFrom(viewModel.courseName) { ($0, $1) }

@@ -70,7 +70,7 @@ private extension SplashViewController {
         case .onboarding:
             window.rootViewController = OnboardingViewController.make()
         case .main:
-            window.rootViewController = MainViewController.make()
+            window.rootViewController = MainViewController.make(requestReview: false)
         case .paygateTransitionMain:
             let vc = PaygateViewController.make { [weak self] in
                 self?.route(.main)

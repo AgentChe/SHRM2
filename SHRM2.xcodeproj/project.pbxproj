@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		267C10B6F19EEB12E4D9DF51 /* Pods_SHRM2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2124345E016B189092F6E3F /* Pods_SHRM2.framework */; };
+		DE93B5EE2DB252B20072A6AD /* RequestReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE93B5ED2DB252B20072A6AD /* RequestReview.swift */; };
 		DEF34E272D9FFA260024180C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF34E1B2D9FFA260024180C /* Assets.xcassets */; };
 		DEF34E292D9FFA260024180C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF34E1E2D9FFA260024180C /* LaunchScreen.storyboard */; };
 		DEF34FFB2D9FFAF10024180C /* QuestionTableContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF34F662D9FFAF10024180C /* QuestionTableContentCell.swift */; };
@@ -287,7 +288,6 @@
 		DEF3510D2D9FFAF10024180C /* CustomMadeTestTableCountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF34F402D9FFAF10024180C /* CustomMadeTestTableCountCell.swift */; };
 		DEF3510E2D9FFAF10024180C /* IAPActionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF34FBA2D9FFAF10024180C /* IAPActionResult.swift */; };
 		DEF3510F2D9FFAF10024180C /* StatsPassRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF34EE82D9FFAF10024180C /* StatsPassRateView.swift */; };
-		DEF351102D9FFAF10024180C /* TestRateUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF34F5B2D9FFAF10024180C /* TestRateUs.swift */; };
 		DEF351112D9FFAF10024180C /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF34FAA2D9FFAF10024180C /* Profile.swift */; };
 		DEF351122D9FFAF10024180C /* TestStatsTableActionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF34F812D9FFAF10024180C /* TestStatsTableActionsCell.swift */; };
 		DEF351132D9FFAF10024180C /* QuestionViewerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF34F502D9FFAF10024180C /* QuestionViewerView.swift */; };
@@ -353,6 +353,7 @@
 		64A2FE8C8CA75430A1DDE50C /* Pods-SHRM2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHRM2.release.xcconfig"; path = "Target Support Files/Pods-SHRM2/Pods-SHRM2.release.xcconfig"; sourceTree = "<group>"; };
 		AD367A617869C9CE31BD9791 /* Pods-SHRM2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SHRM2.debug.xcconfig"; path = "Target Support Files/Pods-SHRM2/Pods-SHRM2.debug.xcconfig"; sourceTree = "<group>"; };
 		D2124345E016B189092F6E3F /* Pods_SHRM2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SHRM2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE93B5ED2DB252B20072A6AD /* RequestReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestReview.swift; sourceTree = "<group>"; };
 		DEF34E022D9FFA1F0024180C /* SHRM2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHRM2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEF34E1B2D9FFA260024180C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEF34E1C2D9FFA260024180C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -575,7 +576,6 @@
 		DEF34F562D9FFAF10024180C /* TestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestType.swift; sourceTree = "<group>"; };
 		DEF34F582D9FFAF10024180C /* TestCloseMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCloseMediator.swift; sourceTree = "<group>"; };
 		DEF34F592D9FFAF10024180C /* TestCloseObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCloseObserver.swift; sourceTree = "<group>"; };
-		DEF34F5B2D9FFAF10024180C /* TestRateUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRateUs.swift; sourceTree = "<group>"; };
 		DEF34F5D2D9FFAF10024180C /* AVPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerView.swift; sourceTree = "<group>"; };
 		DEF34F5F2D9FFAF10024180C /* QuestionContentCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionContentCollectionCell.swift; sourceTree = "<group>"; };
 		DEF34F602D9FFAF10024180C /* QuestionContentCollectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionContentCollectionType.swift; sourceTree = "<group>"; };
@@ -846,6 +846,7 @@
 				DEF34E562D9FFAF10024180C /* TextAttributes.swift */,
 				DEF34E572D9FFAF10024180C /* Weak.swift */,
 				DEF34E582D9FFAF10024180C /* XOREncryption.swift */,
+				DE93B5ED2DB252B20072A6AD /* RequestReview.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1634,14 +1635,6 @@
 			path = Observer;
 			sourceTree = "<group>";
 		};
-		DEF34F5C2D9FFAF10024180C /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				DEF34F5B2D9FFAF10024180C /* TestRateUs.swift */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
 		DEF34F5E2D9FFAF10024180C /* Atoms */ = {
 			isa = PBXGroup;
 			children = (
@@ -1710,7 +1703,6 @@
 			children = (
 				DEF34F572D9FFAF10024180C /* Model */,
 				DEF34F5A2D9FFAF10024180C /* Observer */,
-				DEF34F5C2D9FFAF10024180C /* Utils */,
 				DEF34F722D9FFAF10024180C /* Views */,
 				DEF34F732D9FFAF10024180C /* TestView.swift */,
 				DEF34F742D9FFAF10024180C /* TestViewController.swift */,
@@ -2427,6 +2419,7 @@
 				DEF350772D9FFAF10024180C /* LoginRequest.swift in Sources */,
 				DEF350782D9FFAF10024180C /* TestStatsTableTitleCell.swift in Sources */,
 				DEF350792D9FFAF10024180C /* GetProfileResponseMapper.swift in Sources */,
+				DE93B5EE2DB252B20072A6AD /* RequestReview.swift in Sources */,
 				DEF3507A2D9FFAF10024180C /* SceneDelegate.swift in Sources */,
 				DEF3507B2D9FFAF10024180C /* CustomMadeTestTableStartCell.swift in Sources */,
 				DEF3507C2D9FFAF10024180C /* OStudyModeCell.swift in Sources */,
@@ -2577,7 +2570,6 @@
 				DEF3510D2D9FFAF10024180C /* CustomMadeTestTableCountCell.swift in Sources */,
 				DEF3510E2D9FFAF10024180C /* IAPActionResult.swift in Sources */,
 				DEF3510F2D9FFAF10024180C /* StatsPassRateView.swift in Sources */,
-				DEF351102D9FFAF10024180C /* TestRateUs.swift in Sources */,
 				DEF351112D9FFAF10024180C /* Profile.swift in Sources */,
 				DEF351122D9FFAF10024180C /* TestStatsTableActionsCell.swift in Sources */,
 				DEF351132D9FFAF10024180C /* QuestionViewerView.swift in Sources */,
@@ -2663,7 +2655,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = RWST5PC946;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -2679,7 +2671,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = prep.exams.shrm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2702,7 +2694,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = RWST5PC946;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -2718,7 +2710,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = prep.exams.shrm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
