@@ -38,7 +38,6 @@ class PaygateProductButton: UIButton {
 // MARK: Private
 private extension PaygateProductButton {
     func initialize() {
-        backgroundColor = UIColor.clear
         layer.cornerRadius = 10.scale
         layer.borderWidth = 2.scale
     }
@@ -46,6 +45,7 @@ private extension PaygateProductButton {
     func update() {
         layer.borderColor = marked ? Appearance.main300.cgColor : Appearance.mono200.cgColor
         markedView.isHidden = !marked
+        backgroundColor = marked ? Appearance.mono100 : UIColor.clear
     }
 }
 
